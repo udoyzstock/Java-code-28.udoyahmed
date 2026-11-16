@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Task25 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ekta bochor den: ");
+        int year = sc.nextInt();
+
+        // Ternary operator (? :) diye ek line e condition check
+        String result = ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) 
+                        ? "Leap Year" : "Leap Year na";
+        
+        System.out.println(year + " holo " + result);
+    }
+}

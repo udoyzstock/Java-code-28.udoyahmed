@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Task27 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Duita number den: ");
+        int n1 = sc.nextInt(), n2 = sc.nextInt();
+        int a = n1, b = n2;
+
+        // Age GCD ber kore nite hobe
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        int gcd = a;
+
+        // Formula: LCM = (n1 * n2) / GCD
+        int lcm = (n1 * n2) / gcd;
+        System.out.println("LCM holo: " + lcm);
+    }
+}

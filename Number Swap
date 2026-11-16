@@ -1,0 +1,13 @@
+public class Task16 {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+        System.out.println("Swap er age: a = " + a + ", b = " + b);
+
+        // Temporary variable use kore man odol-bodol kora hocche
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("Swap er pore: a = " + a + ", b = " + b);
+    }
+}

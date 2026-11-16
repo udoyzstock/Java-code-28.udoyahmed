@@ -1,0 +1,11 @@
+public class Task24 {
+    public static void main(String[] args) {
+        int a = 8; // Binary: 1000
+
+        // Left shift (<<) man ke 2 er power diye gun kore
+        System.out.println("Left Shift (8 << 1): " + (a << 1)); // Output: 16
+
+        // Right shift (>>) man ke 2 er power diye vag kore
+        System.out.println("Right Shift (8 >> 1): " + (a >> 1)); // Output: 4
+    }
+}

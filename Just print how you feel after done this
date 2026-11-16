@@ -1,0 +1,6 @@
+public class Task28 {
+    public static void main(String[] args) {
+        // Assignment shesh korar por nijer onuvuti print korchi
+        System.out.println("Alhamdulillah! 28 ta code shesh kore ekhon nijeke pro-programmer mone hocche!");
+    }
+}

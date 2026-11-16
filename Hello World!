@@ -1,0 +1,6 @@
+public class Task1 {
+    public static void main(String[] args) {
+        // Screen e "Hello World!" print korar jonno
+        System.out.println("Hello World!");
+    }
+}

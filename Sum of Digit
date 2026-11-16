@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Task12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ekta number den: ");
+        int num = sc.nextInt();
+        int sum = 0;
+
+        // Prottek digit alada kore sum er sathe jog korchi
+        while (num != 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+        System.out.println("Digit gulor jogfol: " + sum);
+    }
+}

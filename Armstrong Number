@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Task4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ekta number den: ");
+        int num = sc.nextInt();
+        int original = num, sum = 0;
+        int digits = String.valueOf(num).length(); // Koyta digit ache ta ber korlam
+
+        while (num != 0) {
+            int rem = num % 10;
+            sum += Math.pow(rem, digits); // Prottek digit er power jog hocche
+            num /= 10;
+        }
+
+        if (sum == original) {
+            System.out.println(original + " ekta Armstrong number.");
+        } else {
+            System.out.println(original + " Armstrong number na.");
+        }
+    }
+}

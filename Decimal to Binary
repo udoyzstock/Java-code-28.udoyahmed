@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Task17 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ekta Decimal number den: ");
+        int dec = sc.nextInt();
+        String binary = "";
+
+        // 2 diye vag kore vagshesh gulo samne jukto korchi
+        while (dec > 0) {
+            int rem = dec % 2;
+            binary = rem + binary;
+            dec /= 2;
+        }
+        System.out.println("Binary man holo: " + binary);
+    }
+}

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Task7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ekta bochor (Year) den: ");
+        int year = sc.nextInt();
+
+        // 400 diye vag gele, othoba 4 diye vag gele kintu 100 diye na gele Leap Year
+        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+            System.out.println(year + " ekta Leap Year.");
+        } else {
+            System.out.println(year + " Leap Year na.");
+        }
+    }
+}

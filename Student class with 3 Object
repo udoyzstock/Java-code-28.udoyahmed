@@ -1,0 +1,28 @@
+class Student {
+    String name;
+    int id;
+
+    // Student er tothyo dekhanor method
+    void display() {
+        System.out.println("ID: " + id + ", Name: " + name);
+    }
+}
+
+public class Task22 {
+    public static void main(String[] args) {
+        // 3 ta alada object toiri korlam
+        Student s1 = new Student();
+        s1.id = 101; s1.name = "Rahim";
+
+        Student s2 = new Student();
+        s2.id = 102; s2.name = "Karim";
+
+        Student s3 = new Student();
+        s3.id = 103; s3.name = "Salam";
+
+        // Sobai ke print korchi
+        s1.display();
+        s2.display();
+        s3.display();
+    }
+}

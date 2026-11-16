@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Task19 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Tinta number den: ");
+        int a = sc.nextInt(), b = sc.nextInt(), c = sc.nextInt();
+
+        // Tinta number compare kore boro ta ber korchi
+        if (a >= b && a >= c) {
+            System.out.println(a + " sobcheye boro.");
+        } else if (b >= a && b >= c) {
+            System.out.println(b + " sobcheye boro.");
+        } else {
+            System.out.println(c + " sobcheye boro.");
+        }
+    }
+}

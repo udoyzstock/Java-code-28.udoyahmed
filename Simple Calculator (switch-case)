@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Task18 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Duita number den: ");
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        System.out.print("Operator den (+, -, *, /): ");
+        char op = sc.next().charAt(0);
+
+        // Operator onujayi kaj korar jonno switch-case
+        switch (op) {
+            case '+': System.out.println("Jogfol: " + (a + b)); break;
+            case '-': System.out.println("Biyogfol: " + (a - b)); break;
+            case '*': System.out.println("Gunfol: " + (a * b)); break;
+            case '/': 
+                if (b != 0) System.out.println("Vagfol: " + (a / b));
+                else System.out.println("0 diye vag kora jay na!");
+                break;
+            default: System.out.println("Vul operator disen!");
+        }
+    }
+}

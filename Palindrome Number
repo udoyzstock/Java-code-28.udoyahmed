@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Task3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ekta number den: ");
+        int num = sc.nextInt();
+        int original = num, reverse = 0;
+
+        // Number ta ke ultano hocche
+        while (num != 0) {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num /= 10;
+        }
+
+        // Original ar reverse soman hole palindrome
+        if (original == reverse) {
+            System.out.println(original + " ekta Palindrome number.");
+        } else {
+            System.out.println(original + " Palindrome number na.");
+        }
+    }
+}

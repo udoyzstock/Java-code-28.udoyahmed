@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Task20 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("n er man den: ");
+        int n = sc.nextInt();
+        double sum = 0.0;
+
+        // i er man 1 theke n porjonto cholbe, r niche 2^i thakbe
+        for (int i = 1; i <= n; i++) {
+            sum += (double) i / Math.pow(2, i);
+        }
+        System.out.println("Series tir jogfol: " + sum);
+    }
+}

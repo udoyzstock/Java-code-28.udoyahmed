@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Task2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ekta number den: ");
+        int num = sc.nextInt();
+        boolean isPrime = true;
+
+        // 1 ba tar choto number prime hoy na
+        if (num <= 1) {
+            isPrime = false;
+        } else {
+            // 2 theke num/2 porjonto vag kore check korbo
+            for (int i = 2; i <= num / 2; i++) {
+                if (num % i == 0) {
+                    isPrime = false; // Vag gele prime na
+                    break;
+                }
+            }
+        }
+
+        if (isPrime) {
+            System.out.println(num + " ekta Prime number.");
+        } else {
+            System.out.println(num + " Prime number na.");
+        }
+    }
+}
